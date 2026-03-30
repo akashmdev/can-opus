@@ -127,7 +127,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-gray-100 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-sm text-gray-500 mb-4 sm:mb-0">
-            © 2025 Canopus, All right reserved
+            © 2026 Canopus, All right reserved
           </p>
 
           <div className="flex space-x-4">
