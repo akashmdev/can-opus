@@ -8,8 +8,8 @@ import TeamSection from '../components/TeamSection';
 import CallToActionSection from '../components/CallToActionSection';
 
 export const metadata: Metadata = {
-    title: 'About Us - Canopus | Engineering Solutions Provider',
-    description: 'Learn about Canopus, a trusted engineering solutions provider with over 10 years of industry excellence (2014–2025). Discover our mission, values, and milestones.',
+    title: "About CanOpus | Engineering Solutions & Industrial Innovation",
+    description: "Learn about CanOpus, a trusted engineering solutions provider delivering innovative industrial services focused on efficiency, reliability, and environmental sustainability.",
 };
 
 export default function AboutPage() {

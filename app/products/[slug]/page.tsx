@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -5,6 +6,48 @@ import { getProductBySlug, getAllProductSlugs, products } from '../../data/produ
 import { FaTools, FaShieldAlt, FaHeadset, FaDollarSign, FaDownload, FaEnvelope } from 'react-icons/fa';
 import ProductSlider from '../../components/ProductSlider';
 import EnquireNowButton from '../../components/EnquireNowButton';
+
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+    const { slug } = await params;
+    const product = getProductBySlug(slug);
+
+    if (!product) {
+        return {
+            title: 'Product Not Found',
+        };
+    }
+
+    // Custom SEO mapping for requested products/services
+    const seoMap: Record<string, { title: string, description: string }> = {
+        'industrial-dust-fume-mist': {
+            title: "Dust Extraction Systems in India | Industrial Air Filtration Solutions",
+            description: "High-performance dust extraction and air filtration systems by CanOpus to improve air quality, safety, and compliance in industrial environments."
+        },
+        'emission-monitoring': {
+            title: "Emission Monitoring Systems | Industrial Environmental Solutions",
+            description: "Advanced emission monitoring systems from CanOpus to track, control, and reduce industrial emissions while ensuring regulatory compliance."
+        },
+        'condition-monitoring-equipment': {
+            title: "Condition Based Monitoring Services | Predictive Maintenance Solutions",
+            description: "Optimize equipment performance with CanOpus condition-based monitoring and predictive maintenance solutions to reduce downtime and increase efficiency."
+        },
+        'flow-level-instrument': {
+            title: "Flow & Level Measurement Instruments | Industrial Monitoring Solutions",
+            description: "Accurate flow and level measurement solutions by CanOpus for reliable industrial operations and improved process control."
+        }
+    };
+
+    const seo = seoMap[slug];
+
+    return {
+        title: seo?.title || `${product.title} | CanOpus Industrial Services`,
+        description: seo?.description || product.description,
+    };
+}
 
 export async function generateStaticParams() {
     const slugs = getAllProductSlugs();

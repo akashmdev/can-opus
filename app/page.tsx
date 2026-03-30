@@ -1,4 +1,10 @@
+import { Metadata } from 'next';
 import HeroSection from './components/HeroSection';
+
+export const metadata: Metadata = {
+  title: "Engineering Solutions Company in India | CanOpus Industrial Services",
+  description: "CanOpus delivers advanced engineering solutions including dust extraction, emission monitoring, and predictive maintenance services to improve industrial efficiency and sustainability.",
+};
 import WhatWeDoSection from './components/WhatWeDoSection';
 import PartnersSection from './components/PartnersSection';
 import ProductsSection from './components/ProductsSection';
