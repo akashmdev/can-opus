@@ -24,21 +24,21 @@ export async function generateMetadata({
     // Custom SEO mapping for requested products/services
     const seoMap: Record<string, { title: string, description: string }> = {
         'industrial-dust-fume-mist': {
-            title: "Dust Extraction Systems in India | Industrial Air Filtration Solutions",
-            description: "High-performance dust extraction and air filtration systems by CanOpus to improve air quality, safety, and compliance in industrial environments."
-        },
-        'emission-monitoring': {
-            title: "Emission Monitoring Systems | Industrial Environmental Solutions",
-            description: "Advanced emission monitoring systems from CanOpus to track, control, and reduce industrial emissions while ensuring regulatory compliance."
+            title: "Dust Extraction Systems India | CanOpus",
+            description: "Industrial dust extraction systems in India. We provide efficient air filtration and dust collection solutions for industrial environments."
         },
         'condition-monitoring-equipment': {
-            title: "Condition Based Monitoring Services | Predictive Maintenance Solutions",
-            description: "Optimize equipment performance with CanOpus condition-based monitoring and predictive maintenance solutions to reduce downtime and increase efficiency."
+            title: "Condition Based Monitoring Services | CanOpus",
+            description: "Expert condition-based monitoring services for industrial machinery. Predictive maintenance and machine condition monitoring solutions."
         },
         'flow-level-instrument': {
-            title: "Flow & Level Measurement Instruments | Industrial Monitoring Solutions",
-            description: "Accurate flow and level measurement solutions by CanOpus for reliable industrial operations and improved process control."
-        }
+            title: "Flow and Level Measurement Instruments | CanOpus",
+            description: "High-precision flow and level measurement instruments for industrial process monitoring and control."
+        },
+        // 'emission-monitoring': {
+        //     title: "Emission Monitoring Systems | CanOpus",
+        //     description: "Advanced emission monitoring systems and continuous emission monitoring (CEMS) for industrial applications."
+        // }
     };
 
     const seo = seoMap[slug];

@@ -4,9 +4,8 @@ import ProductsGridSection from './components/ProductsGridSection';
 import ProductsCTASection from './components/ProductsCTASection';
 
 export const metadata: Metadata = {
-    title: "Industrial Engineering Products | Monitoring & Filtration Systems",
-    description: "Discover CanOpus industrial products including filtration systems, monitoring equipment, and instrumentation for efficient plant operations.",
-    keywords: 'industrial products, dust collection, power transmission, gas turbine filtration, screw pumps, flow meters, condition monitoring',
+    title: "Industrial Engineering Products | CanOpus",
+    description: "Explore our range of industrial engineering products including monitoring systems, filtration solutions, and industrial equipment.",
 };
 
 export default function ProductsPage() {
