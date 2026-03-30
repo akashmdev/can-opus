@@ -95,7 +95,7 @@ export default function ProductsCTASection() {
                                     </div>
                                     <div>
                                         <h4 className="font-semibold text-gray-900">Call Us</h4>
-                                        <p className="text-gray-600">+91 123 456 7890</p>
+                                        <p className="text-gray-600">+91 70 7777 1076</p>
                                     </div>
                                 </div>
                                 
@@ -107,7 +107,7 @@ export default function ProductsCTASection() {
                                     </div>
                                     <div>
                                         <h4 className="font-semibold text-gray-900">Email Us</h4>
-                                        <p className="text-gray-600">info@canopus.com</p>
+                                        <p className="text-gray-600">sales@canopus.live</p>
                                     </div>
                                 </div>
                                 
@@ -120,7 +120,7 @@ export default function ProductsCTASection() {
                                     </div>
                                     <div>
                                         <h4 className="font-semibold text-gray-900">Visit Us</h4>
-                                        <p className="text-gray-600">Mumbai, India</p>
+                                        <p className="text-gray-600">Odisha, India</p>
                                     </div>
                                 </div>
                             </div>

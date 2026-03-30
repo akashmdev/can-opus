@@ -7,8 +7,8 @@ import ContactFormSection from './components/ContactFormSection';
 import LocationSection from './components/LocationSection';
 
 export const metadata: Metadata = {
-  title: 'Contact Us - Canopus | Get in Touch',
-  description: 'Contact Canopus for engineering solutions. Reach out to our team of experts for consultation, support, or partnership opportunities.',
+  title: "Contact Engineering Company India | CanOpus",
+  description: "Get in touch with CanOpus, a leading engineering company in India, for industrial solutions and consultation.",
 };
 
 export default function ContactPage() {

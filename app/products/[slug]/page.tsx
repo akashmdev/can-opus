@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -5,6 +6,48 @@ import { getProductBySlug, getAllProductSlugs, products } from '../../data/produ
 import { FaTools, FaShieldAlt, FaHeadset, FaDollarSign, FaDownload, FaEnvelope } from 'react-icons/fa';
 import ProductSlider from '../../components/ProductSlider';
 import EnquireNowButton from '../../components/EnquireNowButton';
+
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+    const { slug } = await params;
+    const product = getProductBySlug(slug);
+
+    if (!product) {
+        return {
+            title: 'Product Not Found',
+        };
+    }
+
+    // Custom SEO mapping for requested products/services
+    const seoMap: Record<string, { title: string, description: string }> = {
+        'industrial-dust-fume-mist': {
+            title: "Dust Extraction Systems India | CanOpus",
+            description: "Industrial dust extraction systems in India. We provide efficient air filtration and dust collection solutions for industrial environments."
+        },
+        'condition-monitoring-equipment': {
+            title: "Condition Based Monitoring Services | CanOpus",
+            description: "Expert condition-based monitoring services for industrial machinery. Predictive maintenance and machine condition monitoring solutions."
+        },
+        'flow-level-instrument': {
+            title: "Flow and Level Measurement Instruments | CanOpus",
+            description: "High-precision flow and level measurement instruments for industrial process monitoring and control."
+        },
+        // 'emission-monitoring': {
+        //     title: "Emission Monitoring Systems | CanOpus",
+        //     description: "Advanced emission monitoring systems and continuous emission monitoring (CEMS) for industrial applications."
+        // }
+    };
+
+    const seo = seoMap[slug];
+
+    return {
+        title: seo?.title || `${product.title} | CanOpus Industrial Services`,
+        description: seo?.description || product.description,
+    };
+}
 
 export async function generateStaticParams() {
     const slugs = getAllProductSlugs();

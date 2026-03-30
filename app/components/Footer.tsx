@@ -1,4 +1,4 @@
-import { RiFacebookFill, RiTwitterXFill, RiLinkedinFill } from "react-icons/ri";
+import { RiFacebookFill, RiTwitterXFill, RiLinkedinFill, RiInstagramFill } from "react-icons/ri";
 import Image from "next/image";
 
 export default function Footer() {
@@ -40,17 +40,22 @@ export default function Footer() {
   const socialLinks = [
     {
       icon: <RiFacebookFill className="w-5 h-5" />,
-      href: "#",
+      href: "https://www.facebook.com/CanOpusEngineeringServices",
       label: "Facebook",
     },
     {
+      icon: <RiInstagramFill className="w-5 h-5" />,
+      href: "https://www.instagram.com/canopus.engineering.services",
+      label: "Instagram",
+    },
+    {
       icon: <RiTwitterXFill className="w-5 h-5" />,
-      href: "#",
+      href: "https://x.com/canopus2014",
       label: "Twitter",
     },
     {
       icon: <RiLinkedinFill className="w-5 h-5" />,
-      href: "#",
+      href: "https://www.linkedin.com/company/canopusengineering",
       label: "LinkedIn",
     },
   ];
@@ -108,18 +113,21 @@ export default function Footer() {
 
             <div>
               <h3 className="text-lg font-semibold text-black mb-2">Address</h3>
-              <p className="text-gray-600 text-sm">
-                CanOpus Engineering Services Suite - B205, 2nd Floor, Shibaram
-                Tower, Infocity Road Chandaka IE. Patia, Bhubaneswar-751 024,
-                Odisha
-              </p>
+              <div className="space-y-3">
+                <p className="text-gray-600 text-sm">
+                  3670, Nandankanan Rd, Raghunathpur, Bhubaneswar, Odisha 751024
+                </p>
+                <p className="text-gray-600 text-sm">
+                  Navaratna Corporate, B201 Ahmedabad - 3800058, Gujarat
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
         <div className="mt-12 pt-8 border-t border-gray-100 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-sm text-gray-500 mb-4 sm:mb-0">
-            © 2025 Canopus, All right reserved
+            © 2026 Canopus, All right reserved
           </p>
 
           <div className="flex space-x-4">

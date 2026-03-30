@@ -8,8 +8,8 @@ import TeamSection from '../components/TeamSection';
 import CallToActionSection from '../components/CallToActionSection';
 
 export const metadata: Metadata = {
-    title: 'About Us - Canopus | Engineering Solutions Provider',
-    description: 'Learn about Canopus, a trusted engineering solutions provider with over 10 years of industry excellence (2014–2025). Discover our mission, values, and milestones.',
+    title: "Engineering Solutions Company in India | About CanOpus",
+    description: "Learn about CanOpus, a premier engineering solutions company in India specializing in industrial engineering and innovation.",
 };
 
 export default function AboutPage() {
@@ -20,7 +20,7 @@ export default function AboutPage() {
             <MissionVisionSection />
             <ValuesSection />
             <HistorySection />
-            <TeamSection />
+            {/* <TeamSection /> */}
             <CallToActionSection />
         </main>
     );
