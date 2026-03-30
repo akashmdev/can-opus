@@ -8,7 +8,7 @@ export default function PartneringPage() {
   return (
     <main className="min-h-screen">
       <PartneringHeroSection />
-      <PartneringOpportunitiesSection />
+      {/* <PartneringOpportunitiesSection /> */}
       <PartneringContentSection />
       <BusinessPartnershipSection />
       <DirectorQuoteSection />

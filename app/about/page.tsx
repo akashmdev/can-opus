@@ -20,7 +20,7 @@ export default function AboutPage() {
             <MissionVisionSection />
             <ValuesSection />
             <HistorySection />
-            <TeamSection />
+            {/* <TeamSection /> */}
             <CallToActionSection />
         </main>
     );
