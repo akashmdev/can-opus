@@ -33,7 +33,7 @@ export const products: Product[] = [
   {
     id: 1,
     slug: "industrial-dust-fume-mist",
-    image: "/images/products/Industrial Dust, Fume and Mist.png",
+    image: "/images/products/dust_collector.png",
     title: "Industrial Dust, Fume & Mist",
     description:
       "Complete range of dust collection equipment. Efficient & Energy Saving Dust Extraction Systems in Pneumatic & Centralized Solutions is our Specialty.",
@@ -163,7 +163,7 @@ export const products: Product[] = [
   {
     id: 3,
     slug: "power-transmission-tech",
-    image: "/images/products/Power Transmission Tech.png",
+    image: "/images/products/power_transmission.png",
     title: "Power Transmission Technology",
     description:
       "Mechanical Power Transmission Technology through products that not only add to the machinery performance but also significantly improve its reliability with quality state-of-the-art technology for power products that help you energy efficiency.",
@@ -253,7 +253,7 @@ export const products: Product[] = [
   {
     id: 4,
     slug: "gas-turbine-filtration",
-    image: "/images/products/Gas turbine filtration.png",
+    image: "/images/products/gas_turbine_filtration.png",
     title: "Gas turbine filtration",
     description:
       "Gas Turbine systems are capable to upgrade performance efficiency & availability of any Gas Turbine (GT) or Air Compressor. CanOpus offer the best in Class Coalescer Sucker Web media for your GTs",
@@ -339,81 +339,79 @@ export const products: Product[] = [
   },
   {
     id: 5,
-    slug: "gas-phase-filtration",
-    image: "/images/products/Gas phase filtration.png",
-    title: "Gas phase filtration",
+    slug: "steam-trap",
+    image: "/images/products/steam_trap.jpeg",
+    title: "Steam Trap",
     description:
-      "CanOpus helps you eliminate Toxic & Hazardous Gases as well as bad Odors from the Industrial Air.",
+      "CanOpus delivers high-performance steam traps for industrial efficiency — removing condensate and non-condensable gases while preventing live steam loss.",
     fullDescription:
-      "Our Gas Phase Filtration solutions are specifically designed to eliminate toxic and hazardous gases as well as unpleasant odors from industrial air. We provide comprehensive solutions that ensure a safe and comfortable working environment.",
+      "Efficient steam management is a critical factor in the overall performance, energy efficiency, and reliability of industrial systems. Our steam traps are designed with advanced technology to ensure effective removal of condensate and non-condensable gases while preventing the loss of live steam. These high-performance steam traps help improve heat transfer, reduce energy consumption, and enhance system durability.",
     heroDescription:
-      "Gas phase filtration essentially covers the removal of harmful, nuisance, and toxic gases from the air making the environment cleaner and purer with specialized media and chemical substrate. Gas phase filtration technology is the optimum solution for the efficient removal of a board spectrum of air-borne contaminants. Our high-quality engineering and manufacturing air filtration solutions provide best-in-class solutions for our customers. We design build-to-order systems with unique filtration solutions for any environment that protects the people and the equipment critical at its best.",
-    // heroSubDescription:
-    //   "Protect your workforce and comply with air quality standards using our advanced chemical filtration systems. From activated carbon to molecular filtration, we provide comprehensive solutions for a safer workplace.",
+      "Efficient steam management is a critical factor in the overall performance, energy efficiency, and reliability of industrial systems. Our steam traps for industrial efficiency are designed with advanced technology to ensure effective removal of condensate and non-condensable gases while preventing the loss of live steam. These high-performance steam traps for industrial efficiency help improve heat transfer, reduce energy consumption, and enhance system durability. Our trained and skilled engineers and technicians have hands-on experience in the selection, installation, monitoring, and maintenance of steam traps for industrial efficiency across various industrial applications. We place strong emphasis on proper system design, accurate trap sizing, and optimal performance to ensure maximum efficiency of your steam systems. Throughout the entire process, we remain highly committed to safety, operational reliability, and on-time execution, delivering steam traps for industrial efficiency that meet the highest industry standard.",
     features: [
-      "Toxic gas elimination",
-      "Hazardous gas removal",
-      "Odor control systems",
-      "Advanced chemical filtration",
-      "Safe working environment",
-      "Compliance with air quality standards",
+      "Effective condensate removal",
+      "Prevention of live steam loss",
+      "Improved heat transfer efficiency",
+      "Reduced energy consumption",
+      "Enhanced system durability",
+      "Accurate trap sizing & selection",
     ],
     applications: [
-      "Chemical processing plants",
+      "Power generation plants",
+      "Oil & gas processing",
+      "Chemical & petrochemical plants",
       "Pharmaceutical manufacturing",
-      "Wastewater treatment facilities",
-      "Food processing industries",
-      "Semiconductor manufacturing",
-      "Laboratory facilities",
+      "Food & beverage processing",
+      "HVAC & district heating systems",
     ],
     variants: [
       {
-        title: "Activated Carbon Filters",
-        image: "/images/products-variants/gas-phase/gas-phase-1.jpg",
+        title: "SH-300 Bimetallic Steam Trap",
+        image: "/images/products-variants/steam-trap/steam-trap-1.jpg",
       },
       {
-        title: "Chemical Media Filters",
-        image: "/images/products-variants/gas-phase/gas-phase-2.jpg",
+        title: "A & AI Series Float & Thermostatic Steam Trap",
+        image: "/images/products-variants/steam-trap/steam-trap-2.jpg",
       },
       {
-        title: "Molecular Filtration Systems",
-        image: "/images/products-variants/gas-phase/gas-phase-3.jpg",
+        title: "300 Series Inverted Bucket Steam Trap",
+        image: "/images/products-variants/steam-trap/steam-trap-3.jpg",
       },
       {
-        title: "Odor Control Units",
-        image: "/images/products-variants/gas-phase/gas-phase-4.jpg",
+        title: "CD-80S Series Thermodynamic Disc Trap",
+        image: "/images/products-variants/steam-trap/steam-trap-4.jpg",
       },
       {
-        title: "VOC Removal Systems",
-        image: "/images/products-variants/gas-phase/gas-phase-5.jpg",
+        title: "TT Series Thermostatic Steam Trap",
+        image: "/images/products-variants/steam-trap/steam-trap-5.jpg",
       },
       {
-        title: "Acid Gas Scrubbers",
-        image: "/images/products-variants/gas-phase/gas-phase-6.jpg",
+        title: "TVS 800 Series Trap Valve Station",
+        image: "/images/products-variants/steam-trap/steam-trap-6.jpg",
       },
     ],
     detailSections: [
       {
-        title: "Face Mask - KN95 Healthcare Particulate Respirator",
+        title: "Selection & Sizing",
         content:
-          "The KN95 Healthcare Particulate Respirator mask is FDA Class 1 approved and individually wrapped. This mask is also available with Puraward fiber (PWF) technology.",
+          "Proper steam trap selection and sizing are critical to system efficiency. Our engineers evaluate operating pressure, condensate load, and application type to recommend the most suitable trap, ensuring reliable performance and minimal energy waste.",
       },
       {
-        title: "PuraShield® 500 Cabinet",
+        title: "Installation & Commissioning",
         content:
-          "Destroys up to 99.98% of Target Viruses & Bacteria*. Uses a disposable 4-layer filter with an antimicrobial filter layer using PuraWard® technology that eliminates viruses and bacteria. Includes 11 lbs of Purafil patented antimicrobial dry chemical media blend that eliminates viruses and bacteria. Compact and mobile design.",
+          "Our skilled technicians handle the complete installation and commissioning of steam traps across a wide range of industrial environments. We follow best practices to ensure correct orientation, bypass arrangement, and strainer placement for long-term trouble-free operation.",
       },
       {
-        title: "PuraShield® Mini",
+        title: "Monitoring & Maintenance",
         content:
-          "Destroys up to 99.98% of Target Viruses & Bacteria*. Uses a disposable 3-layer filter that removes harmful viruses, bacteria, mold, and smoke from the air. Containing Purafil patented antimicrobial dry chemical media blend. Equipped with an antimicrobial final filter layer using PuraWard® technology. Filtration for harmful PM0.3, PM2.5 particulate matter. Also removes toxic and damaging gaseous pollutants.",
+          "We provide ongoing steam trap monitoring and maintenance services, including ultrasonic and thermal imaging surveys to detect failed-open or failed-closed traps. Regular maintenance reduces energy losses, prevents water hammer, and extends the service life of your steam system.",
       },
     ],
   },
   {
     id: 6,
     slug: "flow-level-instrument",
-    image: "/images/products/Flow & level instrument.png",
+    image: "/images/products/flow_instrument.png",
     title: "Flow & level instrument",
     description:
       "Experience the true Measure of Quality with our Higher Accuracies. CanOpus Supplies & Installs Flow Meters to check and sustain with accuracy to the Decade.",
@@ -572,7 +570,7 @@ export const products: Product[] = [
   {
     id: 7,
     slug: "condition-monitoring-equipment",
-    image: "/images/products/Condition monitoring equipment.png",
+    image: "/images/products/condition_monitoring_equipment.png",
     title: "Condition monitoring equipment",
     description:
       "CanOpus Laser Online Sensor Alignment should not eat into your maintenance budget. Better it should save the budget. Experience & Digital Sensor Equipment from CanOpus.",

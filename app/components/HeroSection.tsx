@@ -58,12 +58,12 @@ export default function HeroSection() {
             <h1 className="text-white font-semibold leading-none mb-4 lg:mb-6 font-sans">
               <div className="text-4xl md:text-7xl tracking-tight">
                 <span className="block">
-                  Building future with Innovative  solutions
+                  Developing Solutions for a Sustainable Environment
                 </span>
 
 
               </div>
-              
+
             </h1>
 
             {/* Subtitle */}
