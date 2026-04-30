@@ -15,24 +15,24 @@ export default function Footer() {
     products: [
       {
         name: "Industrial Dust, Fume & Mist",
-        href: "#",
+        href: "/products/industrial-dust-fume-mist",
       },
       // { name: "Emission Monitoring", href: "#" },
       {
         name: "Power Transmission Technology",
-        href: "#",
+        href: "/products/power-transmission-tech",
       },
       {
         name: "Gas Turbine Filtration",
-        href: "#",
+        href: "/products/gas-turbine-filtration",
       },
       {
-        name: "Gas Phase Filtration",
-        href: "#",
+        name: "Steam Trap",
+        href: "/products/steam-trap",
       },
-      { name: "Flow & Level Instrument", href: "#" },
-      { name: "Condition Monitoring Equipment", href: "#" },
-      { name: "Screw Pumps", href: "#" },
+      { name: "Flow & Level Instrument", href: "/products/flow-level-instrument" },
+      { name: "Condition Monitoring Equipment", href: "/products/condition-monitoring-equipment" },
+      { name: "Screw Pumps", href: "/products/screw-pumps" },
       // { name: "Microbial Filtration", href: "#" },
     ],
   };
