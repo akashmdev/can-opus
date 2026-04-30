@@ -25,7 +25,7 @@ export default function LocationSection() {
                     <div className="relative">
                         <div className="rounded-3xl h-96 lg:h-[500px] overflow-hidden shadow-2xl">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.2360195258825!2d85.82813937501275!3d20.373156281117218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19091c84229a9f%3A0xfb040a70bef0acb5!2sCanOpus%20Engineering%20Services!5e0!3m2!1sen!2sin!4v1755959273168!5m2!1sen!2sin"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.236019068119!2d85.8307143!3d20.373156299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19091c84229a9f%3A0xfb040a70bef0acb5!2sCanOpus%20Engineering%20Services!5e0!3m2!1sen!2sin!4v1777477412070!5m2!1sen!2sin"
                                 width="100%"
                                 height="100%"
                                 style={{ border: 0 }}
@@ -51,10 +51,9 @@ export default function LocationSection() {
                                     <h3 className="text-xl font-bold text-gray-900 mb-3">Office Address</h3>
                                     <p className="text-gray-700 leading-relaxed mb-2">
                                         CanOpus Engineering Services<br />
-                                        Suite - B205, 2nd Floor,<br />
-                                        Shibaram Tower, Infocity Road<br />
-                                        Chandaka IE. Patia,<br />
-                                        Bhubaneswar-751 024, Odisha
+                                        3670, Nandankanan Rd,<br />
+                                        Raghunathpur,<br />
+                                        Bhubaneswar, Odisha 751024
                                     </p>
                                 </div>
                             </div>
