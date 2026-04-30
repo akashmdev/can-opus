@@ -599,19 +599,19 @@ export const products: Product[] = [
     variants: [
       {
         title: "Vibration Analyzer | Balancer DigivibeMX®",
-        image: "/images/products/Condition monitoring equipment.png",
+        image: "/images/products-variants/condition-monitoring/vibration_analyzer.jpeg",
       },
       {
         title: "Online Monitoring System PHANTOM®",
-        image: "/images/products/Condition monitoring equipment.png",
+        image: "/images/products-variants/condition-monitoring/online_monitor.jpeg",
       },
       {
         title: "Wireless Triaxial Accelerometer WISER 3X®",
-        image: "/images/products/Condition monitoring equipment.png",
+        image: "/images/products-variants/condition-monitoring/wireless_triaxial.jpeg",
       },
       {
         title: "Laser Alignment System EI AlIGNMENT®",
-        image: "/images/products/Condition monitoring equipment.png",
+        image: "/images/products-variants/condition-monitoring/laser_alignment.jpeg",
       },
     ],
     detailSections: [
