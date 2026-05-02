@@ -1,6 +1,8 @@
+import Image from "next/image";
+
 // ─── IMAGE VIEWPORT ──────────────────────────────────────────────
 // Adjust the position below to reframe which part of the image shows.
-// Format: "X% Y%"
+// objectPosition format: "X% Y%"
 //   X → horizontal: 0% = far left, 50% = center, 100% = far right
 //   Y → vertical:   0% = top,      50% = center, 100% = bottom
 const IMAGE_POSITION = "50% 50%"; // ← change this value to reframe the image
@@ -8,15 +10,16 @@ const IMAGE_POSITION = "50% 50%"; // ← change this value to reframe the image
 
 export default function PartneringHeroSection() {
     return (
-        <section
-            className="pt-20 pb-16 lg:pt-28 lg:pb-24 relative"
-            style={{
-                backgroundImage: "url('/images/partners/partner.png')",
-                backgroundSize: "cover",
-                backgroundPosition: IMAGE_POSITION,
-                backgroundRepeat: "no-repeat",
-            }}
-        >
+        <section className="pt-20 pb-16 lg:pt-28 lg:pb-24 relative overflow-hidden">
+            {/* Background image — zoom-stable via Next.js Image fill */}
+            <Image
+                src="/images/partners/partner.png"
+                alt=""
+                fill
+                priority
+                style={{ objectFit: "cover", objectPosition: IMAGE_POSITION }}
+                aria-hidden="true"
+            />
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center max-w-4xl mx-auto">
                     {/* Partnering Badge */}
@@ -41,3 +44,4 @@ export default function PartneringHeroSection() {
         </section>
     );
 }
+
