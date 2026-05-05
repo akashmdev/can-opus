@@ -52,24 +52,28 @@ export default function ContactFormSection() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
     try {
-      await new Promise((resolve) => setTimeout(resolve, 2000));
-      setSubmitStatus("success");
+      const res = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ formType: 'contact', ...formData }),
+      });
+      if (!res.ok) throw new Error('Failed');
+      setSubmitStatus('success');
       setFormData({
-        name: "",
-        email: "",
-        company: "",
-        phone: "",
-        subject: "",
-        message: "",
-        service: "",
+        name: '',
+        email: '',
+        company: '',
+        phone: '',
+        subject: '',
+        message: '',
+        service: '',
       });
     } catch (_error) {
-      setSubmitStatus("error");
+      setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
-      setTimeout(() => setSubmitStatus("idle"), 5000);
+      setTimeout(() => setSubmitStatus('idle'), 5000);
     }
   };
 
