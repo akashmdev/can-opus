@@ -45,7 +45,12 @@ export default function EnquiryFormModal() {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      await new Promise((resolve) => setTimeout(resolve, 2000));
+      const res = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ formType: 'enquiry', ...formData }),
+      });
+      if (!res.ok) throw new Error('Failed');
       setSubmitStatus('success');
       setFormData(initialFormData);
       setTimeout(() => {
